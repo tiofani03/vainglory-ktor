@@ -1,0 +1,11 @@
+ktor:
+  application:
+    modules:
+      - com.tiooooo.ApplicationKt.module
+  deployment:
+    port: 8080
+
+postgres:
+  url: "jdbc:postgresql://localhost:5432/ktor_db"
+  user: "ktor"
+  password: "secret"

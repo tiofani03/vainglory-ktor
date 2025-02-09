@@ -1,4 +1,4 @@
-package com.tiooooo.config
+package com.tiooooo.plugins
 
 import io.ktor.server.application.Application
 import io.ktor.server.response.respond

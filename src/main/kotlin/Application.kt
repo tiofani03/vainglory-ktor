@@ -1,10 +1,11 @@
 package com.tiooooo
 
-import com.tiooooo.config.configureContentNegotiation
-import com.tiooooo.config.configureRouting
-import com.tiooooo.config.configureSerialization
-import com.tiooooo.data.datasource.configureDatabases
+import com.tiooooo.data.migrations.initializeDatabaseMigrations
+import com.tiooooo.data.model.hero.initializeDatabaseModels
 import com.tiooooo.di.configureFrameworks
+import com.tiooooo.plugins.configureContentNegotiation
+import com.tiooooo.plugins.configureRouting
+import com.tiooooo.plugins.configureSerialization
 import io.ktor.server.application.Application
 
 fun main(args: Array<String>) {
@@ -13,8 +14,9 @@ fun main(args: Array<String>) {
 
 fun Application.module() {
     configureFrameworks()
+    initializeDatabaseModels()
+    initializeDatabaseMigrations()
     configureSerialization()
     configureContentNegotiation()
-    configureDatabases()
     configureRouting()
 }

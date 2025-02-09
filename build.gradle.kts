@@ -32,4 +32,6 @@ dependencies {
     implementation(libs.ktor.server.config.yaml)
     testImplementation(libs.ktor.server.test.host)
     testImplementation(libs.kotlin.test.junit)
+    implementation("org.jsoup:jsoup:1.15.3")
+    implementation("org.flywaydb:flyway-core:9.22.3")
 }

@@ -1,4 +1,4 @@
-package com.tiooooo.data.schemes.city
+package com.tiooooo.data.model.city
 
 import java.sql.Connection
 import java.sql.Statement
@@ -13,7 +13,6 @@ class CityService(private val connection: Connection) {
         private const val INSERT_CITY = "INSERT INTO cities (name, population) VALUES (?, ?)"
         private const val UPDATE_CITY = "UPDATE cities SET name = ?, population = ? WHERE id = ?"
         private const val DELETE_CITY = "DELETE FROM cities WHERE id = ?"
-
     }
 
     init {

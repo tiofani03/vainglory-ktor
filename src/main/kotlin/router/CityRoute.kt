@@ -1,7 +1,7 @@
 package com.tiooooo.router
 
-import com.tiooooo.data.schemes.city.City
-import com.tiooooo.data.schemes.city.CityService
+import com.tiooooo.data.model.city.City
+import com.tiooooo.data.model.city.CityService
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.request.receive
 import io.ktor.server.response.respond
